@@ -1,0 +1,22 @@
+let startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
+let startupY = ['Slack', 'Trello', 'Tesla', 'Hyperloop', 'Harvest'];
+
+let random1 = Math.floor((Math.random() * startupX.length));
+let random2 = Math.floor((Math.random() * startupY.length));
+
+// console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
+// s
+
+$( "#create" ).on( "click", function() {
+  addElement();
+  // addElement();
+});
+
+// function addElement () { 
+//   var h1 = document.getElementById('xForY');
+
+//   h1.innerHTML += 'A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]; 
+// }
+function addElement () { 
+  $('#xForY').html('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]); 
+}
