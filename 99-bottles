@@ -1,0 +1,13 @@
+for (let totalBottles = 99; totalBottles > 0; totalBottles--) {
+  let bottleNoun = 'bottles';
+  if (totalBottles === 1) {
+    bottleNoun = 'bottle';
+  }
+  console.log(totalBottles + ' ' + bottleNoun 
+  + ' of beer on the wall, ' 
+  + totalBottles + ' ' + bottleNoun 
+  + ' of beer! Take 1 down, pass it around, ' 
+  + (totalBottles - 1) 
+  + ' bottles of beer on the wall!');
+}
+

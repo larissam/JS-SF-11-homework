@@ -1,0 +1,16 @@
+$(function () {
+    $('#fahrenheit_to_celsius').on('click', function () {
+        var givenTemp = document.getElementById("temperature").value;
+        givenTemp = parseInt(givenTemp);
+        let newTemp = (givenTemp - 32) / 1.8;
+        document.getElementById('temperature').value = newTemp;
+    });
+});
+$(function () {
+    $('#celsius_to_fahrenheit').on('click', function () {
+        var givenTemp = document.getElementById("temperature").value;
+        givenTemp = parseInt(givenTemp);
+        let newTemp = 1.8 * givenTemp + 32;
+        document.getElementById('temperature').value = newTemp;
+    });
+});
