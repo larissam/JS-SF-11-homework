@@ -22,7 +22,23 @@
 
 
 // Answer Starts Here
+// Answer Starts Here
+//'calendar'
+//every calendar has
+// - the days of the week and in numerical order
+//----you need a grid or layout done in css and html
+//----you also need to be able to add events to the days of the week
 
+//every calendar has
+// - an option to add details to your event
+//----add an area for meeting rooms
+//----add an area for time alotted for meeting
+
+//every calendar can
+// -tag other people's calendars
+// ----for this you need access to other calendars
+// ----a designated area for said function
+// Answer Ends Here
 
 
 
