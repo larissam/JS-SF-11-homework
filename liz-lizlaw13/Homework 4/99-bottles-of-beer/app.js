@@ -16,7 +16,14 @@
 
 // every line after this we must subtract 0 from current number  
 
-for(let i = 99; i > 0; i--){
-  // the value of i changes here
-  console.log(i, "bottles of beer on the wall", i, "bottles of beer.Take one down and pass it around,", i, "bottles of beer on the wall.");
-}
+
+//   for(let i = 99; i > 0; i--){
+//   console.log(i, "bottles of beer on the wall", i, "bottles of beer.Take one down and pass it around,", i, "bottles of beer on the wall.");
+// };
+  for(let i = 99; i > 0; i--){
+  let lyric = document.querySelector('ul');
+  let song = document.createElement('li');
+  lyric.innerHTML += i + " bottles of beer on the wall" + i + " bottles of beer.Take one down and pass it around," + i + " bottles of beer on the wall.";
+  lyric.appendChild(song);
+};
+
