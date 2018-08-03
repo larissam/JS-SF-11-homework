@@ -12,6 +12,8 @@ console.log("final survey ", finalSurvey);
 
 // CREATE EVENT LISTENER - Submit Button
 addQuestion.addEventListener("click", function() { //adds an event when user clicks on addQuestion button
+    event.preventDefault()
+    
     let text = questionInput.value; //text value entered by user into questionInput gets stored
     console.log("text: ", text); //text entered by user appears in console, but disappears immediately?
     let questionItem = document.createElement("li"); //li element is created, referred to as "questionItem"
@@ -27,6 +29,15 @@ addQuestion.addEventListener("click", function() { //adds an event when user cli
     //reset value to empty string
     questionInput.value = '';
 }, false);
+
+// add new sample question to DOM 
+
+addQuestion.addEventListener("click", function(event) {
+    event.preventDefault();
+    const newQuestion = $question.val();
+    $('#surveyList').append('<li>'+newQuestion+'</li>');
+    $('li').append('<label></label');
+  });
 //END FUNCTION
 
 
